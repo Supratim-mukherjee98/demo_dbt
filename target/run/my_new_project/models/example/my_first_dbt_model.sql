@@ -1,35 +1,61 @@
 
 
-  create or replace table `atlan-dbt`.`Atlan_dbt`.`my_first_dbt_model`
-  
-  
+  create or replace view `atlan-dbt`.`Atlan_dbt`.`my_first_dbt_model`
   OPTIONS()
-  as (
-    /*
-    Welcome to your first dbt model!
-    Did you know that you can also configure models directly within SQL files?
-    This will override configurations stated in dbt_project.yml
+  as with customers as (
 
-    Try changing "table" to "view" below
-*/
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from `dbt-tutorial`.jaffle_shop.customers
+
+),
+
+orders as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from `dbt-tutorial`.jaffle_shop.orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
 
 
+final as (
 
-with source_data as (
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
 
-    select 1 as id
-    union all
-    select null as id
+    from customers
+
+    left join customer_orders using (customer_id)
 
 )
 
-select *
-from source_data
+select * from final;
 
-/*
-    Uncomment the line below to remove records with null `id` values
-*/
-
--- where id is not null
-  );
-    
