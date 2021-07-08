@@ -1392,3 +1392,975 @@ limit 500
 2021-07-07 13:57:41.281736 (Thread-11): handling status request
 2021-07-07 13:57:41.284021 (Thread-11): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd3fe9d8-f519-4b31-87d5-5af65e325795', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76f4402190>]}
 2021-07-07 13:57:41.284555 (Thread-11): sending response (<Response 1192 bytes [200 OK]>) to 10.0.30.148
+2021-07-07 13:57:50.302358 (MainThread): Connection 'model.my_new_project.my_first_dbt_model' was properly closed.
+2021-07-07 13:57:50.320269 (Thread-12): Parsing macros/adapters.sql
+2021-07-07 13:57:50.349058 (Thread-12): Parsing macros/catalog.sql
+2021-07-07 13:57:50.351093 (Thread-12): Parsing macros/materializations/table.sql
+2021-07-07 13:57:50.355163 (Thread-12): Parsing macros/materializations/merge.sql
+2021-07-07 13:57:50.357667 (Thread-12): Parsing macros/materializations/incremental.sql
+2021-07-07 13:57:50.366679 (Thread-12): Parsing macros/materializations/view.sql
+2021-07-07 13:57:50.368859 (Thread-12): Parsing macros/core.sql
+2021-07-07 13:57:50.372657 (Thread-12): Parsing macros/materializations/helpers.sql
+2021-07-07 13:57:50.381412 (Thread-12): Parsing macros/materializations/common/merge.sql
+2021-07-07 13:57:50.395343 (Thread-12): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-07 13:57:50.397110 (Thread-12): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-07 13:57:50.414493 (Thread-12): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-07 13:57:50.445335 (Thread-12): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-07 13:57:50.450233 (Thread-12): Parsing macros/materializations/view/view.sql
+2021-07-07 13:57:50.456307 (Thread-12): Parsing macros/materializations/seed/seed.sql
+2021-07-07 13:57:50.477203 (Thread-12): Parsing macros/materializations/table/table.sql
+2021-07-07 13:57:50.483751 (Thread-12): Parsing macros/materializations/incremental/helpers.sql
+2021-07-07 13:57:50.485606 (Thread-12): Parsing macros/materializations/incremental/incremental.sql
+2021-07-07 13:57:50.491546 (Thread-12): Parsing macros/etc/is_incremental.sql
+2021-07-07 13:57:50.493337 (Thread-12): Parsing macros/etc/query.sql
+2021-07-07 13:57:50.494388 (Thread-12): Parsing macros/etc/datetime.sql
+2021-07-07 13:57:50.503087 (Thread-12): Parsing macros/etc/get_custom_alias.sql
+2021-07-07 13:57:50.504042 (Thread-12): Parsing macros/etc/get_custom_database.sql
+2021-07-07 13:57:50.505701 (Thread-12): Parsing macros/etc/get_custom_schema.sql
+2021-07-07 13:57:50.507672 (Thread-12): Parsing macros/schema_tests/not_null.sql
+2021-07-07 13:57:50.509236 (Thread-12): Parsing macros/schema_tests/accepted_values.sql
+2021-07-07 13:57:50.511865 (Thread-12): Parsing macros/schema_tests/relationships.sql
+2021-07-07 13:57:50.513743 (Thread-12): Parsing macros/schema_tests/unique.sql
+2021-07-07 13:57:50.515436 (Thread-12): Parsing macros/adapters/common.sql
+2021-07-07 13:57:50.719105 (Thread-12): Acquiring new snowflake connection "model.my_new_project.my_second_dbt_model".
+2021-07-07 13:57:50.725375 (Thread-12): Acquiring new snowflake connection "model.my_new_project.my_first_dbt_model".
+2021-07-07 13:57:50.834764 (Thread-12): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd3fe9d8-f519-4b31-87d5-5af65e325795', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76f418b970>]}
+2021-07-07 13:57:51.154315 (Thread-13): handling status request
+2021-07-07 13:57:51.154625 (Thread-13): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd3fe9d8-f519-4b31-87d5-5af65e325795', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76f41adbb0>]}
+2021-07-07 13:57:51.155460 (Thread-13): sending response (<Response 9175 bytes [200 OK]>) to 10.0.31.82
+2021-07-07 13:57:51.162228 (Thread-14): handling status request
+2021-07-07 13:57:51.162427 (Thread-14): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd3fe9d8-f519-4b31-87d5-5af65e325795', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76f459ba30>]}
+2021-07-07 13:57:51.163060 (Thread-14): sending response (<Response 9175 bytes [200 OK]>) to 10.0.9.186
+2021-07-07 13:57:51.177606 (Thread-15): handling status request
+2021-07-07 13:57:51.177794 (Thread-15): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'dd3fe9d8-f519-4b31-87d5-5af65e325795', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76f459b820>]}
+2021-07-07 13:57:51.178406 (Thread-15): sending response (<Response 9175 bytes [200 OK]>) to 10.0.23.35
+2021-07-08 06:30:06.904264 (MainThread): Running with dbt=0.19.1
+2021-07-08 06:30:07.281158 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.rpc.server.RPCServerTask'>, debug=False, defer=None, exclude=None, host='0.0.0.0', log_cache_events=False, log_format='default', models=None, partial_parse=True, port=8580, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='rpc', write_json=True)
+2021-07-08 06:30:07.289134 (MainThread): Tracking: tracking
+2021-07-08 06:30:07.290344 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2e7794190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2e2b25ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2e2b25d00>]}
+2021-07-08 06:30:07.295323 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=15
+2021-07-08 06:30:07.295594 (MainThread): Supported methods: ['cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'status', 'test']
+2021-07-08 06:30:07.295711 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2021-07-08 06:30:07.302987 (Thread-1): Parsing macros/adapters.sql
+2021-07-08 06:30:07.333887 (Thread-1): Parsing macros/catalog.sql
+2021-07-08 06:30:07.336037 (Thread-1): Parsing macros/materializations/table.sql
+2021-07-08 06:30:07.340098 (Thread-1): Parsing macros/materializations/merge.sql
+2021-07-08 06:30:07.342241 (Thread-1): Parsing macros/materializations/incremental.sql
+2021-07-08 06:30:07.352340 (Thread-1): Parsing macros/materializations/view.sql
+2021-07-08 06:30:07.354791 (Thread-1): Parsing macros/core.sql
+2021-07-08 06:30:07.358981 (Thread-1): Parsing macros/materializations/helpers.sql
+2021-07-08 06:30:07.368107 (Thread-1): Parsing macros/materializations/common/merge.sql
+2021-07-08 06:30:07.382745 (Thread-1): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-08 06:30:07.384798 (Thread-1): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-08 06:30:07.402759 (Thread-1): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-08 06:30:07.434306 (Thread-1): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-08 06:30:07.439651 (Thread-1): Parsing macros/materializations/view/view.sql
+2021-07-08 06:30:07.446162 (Thread-1): Parsing macros/materializations/seed/seed.sql
+2021-07-08 06:30:07.467037 (Thread-1): Parsing macros/materializations/table/table.sql
+2021-07-08 06:30:07.473763 (Thread-1): Parsing macros/materializations/incremental/helpers.sql
+2021-07-08 06:30:07.475685 (Thread-1): Parsing macros/materializations/incremental/incremental.sql
+2021-07-08 06:30:07.481711 (Thread-1): Parsing macros/etc/is_incremental.sql
+2021-07-08 06:30:07.483351 (Thread-1): Parsing macros/etc/query.sql
+2021-07-08 06:30:07.484423 (Thread-1): Parsing macros/etc/datetime.sql
+2021-07-08 06:30:07.493147 (Thread-1): Parsing macros/etc/get_custom_alias.sql
+2021-07-08 06:30:07.494109 (Thread-1): Parsing macros/etc/get_custom_database.sql
+2021-07-08 06:30:07.495753 (Thread-1): Parsing macros/etc/get_custom_schema.sql
+2021-07-08 06:30:07.497757 (Thread-1): Parsing macros/schema_tests/not_null.sql
+2021-07-08 06:30:07.499291 (Thread-1): Parsing macros/schema_tests/accepted_values.sql
+2021-07-08 06:30:07.502065 (Thread-1): Parsing macros/schema_tests/relationships.sql
+2021-07-08 06:30:07.503929 (Thread-1): Parsing macros/schema_tests/unique.sql
+2021-07-08 06:30:07.505699 (Thread-1): Parsing macros/adapters/common.sql
+2021-07-08 06:30:07.584767 (Thread-1): Acquiring new snowflake connection "model.my_new_project.my_second_dbt_model".
+2021-07-08 06:30:07.602514 (Thread-1): Acquiring new snowflake connection "model.my_new_project.my_first_dbt_model".
+2021-07-08 06:30:07.722456 (Thread-1): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '874ddd18-c273-4c00-9dd5-356199f36b40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2e085dfd0>]}
+2021-07-08 06:30:17.258080 (Thread-2): handling ps request
+2021-07-08 06:30:17.258405 (Thread-2): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '874ddd18-c273-4c00-9dd5-356199f36b40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2e0990430>]}
+2021-07-08 06:30:17.259044 (Thread-2): sending response (<Response 105 bytes [200 OK]>) to 10.0.31.252
+2021-07-08 06:30:17.281497 (Thread-3): handling status request
+2021-07-08 06:30:17.281805 (Thread-3): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '874ddd18-c273-4c00-9dd5-356199f36b40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2e2b25400>]}
+2021-07-08 06:30:17.282644 (Thread-3): sending response (<Response 9143 bytes [200 OK]>) to 10.0.13.236
+2021-07-08 06:30:17.301821 (Thread-4): handling status request
+2021-07-08 06:30:17.302174 (Thread-4): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '874ddd18-c273-4c00-9dd5-356199f36b40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2e098e490>]}
+2021-07-08 06:30:17.303260 (Thread-4): sending response (<Response 9143 bytes [200 OK]>) to 10.0.37.153
+2021-07-08 06:30:17.305908 (Thread-5): handling status request
+2021-07-08 06:30:17.306112 (Thread-5): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '874ddd18-c273-4c00-9dd5-356199f36b40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2e09f8460>]}
+2021-07-08 06:30:17.306787 (Thread-5): sending response (<Response 9143 bytes [200 OK]>) to 10.0.33.205
+2021-07-08 06:30:17.323050 (Thread-6): handling status request
+2021-07-08 06:30:17.323417 (Thread-6): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '874ddd18-c273-4c00-9dd5-356199f36b40', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2e09f8730>]}
+2021-07-08 06:30:17.324324 (Thread-6): sending response (<Response 9143 bytes [200 OK]>) to 10.0.33.205
+2021-07-08 11:21:00.768016 (MainThread): Running with dbt=0.19.1
+2021-07-08 11:21:01.144501 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.rpc.server.RPCServerTask'>, debug=False, defer=None, exclude=None, host='0.0.0.0', log_cache_events=False, log_format='default', models=None, partial_parse=True, port=8580, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='rpc', write_json=True)
+2021-07-08 11:21:01.152236 (MainThread): Tracking: tracking
+2021-07-08 11:21:01.152493 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17da97deb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17e4a858e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17e4a99bb0>]}
+2021-07-08 11:21:01.152875 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=15
+2021-07-08 11:21:01.154094 (MainThread): Supported methods: ['cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'status', 'test']
+2021-07-08 11:21:01.158791 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2021-07-08 11:21:01.168184 (Thread-1): Parsing macros/adapters.sql
+2021-07-08 11:21:01.198741 (Thread-1): Parsing macros/catalog.sql
+2021-07-08 11:21:01.200894 (Thread-1): Parsing macros/materializations/table.sql
+2021-07-08 11:21:01.204942 (Thread-1): Parsing macros/materializations/merge.sql
+2021-07-08 11:21:01.206991 (Thread-1): Parsing macros/materializations/incremental.sql
+2021-07-08 11:21:01.217063 (Thread-1): Parsing macros/materializations/view.sql
+2021-07-08 11:21:01.219368 (Thread-1): Parsing macros/core.sql
+2021-07-08 11:21:01.223485 (Thread-1): Parsing macros/materializations/helpers.sql
+2021-07-08 11:21:01.232884 (Thread-1): Parsing macros/materializations/common/merge.sql
+2021-07-08 11:21:01.247139 (Thread-1): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-08 11:21:01.249047 (Thread-1): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-08 11:21:01.266763 (Thread-1): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-08 11:21:01.298375 (Thread-1): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-08 11:21:01.303542 (Thread-1): Parsing macros/materializations/view/view.sql
+2021-07-08 11:21:01.309803 (Thread-1): Parsing macros/materializations/seed/seed.sql
+2021-07-08 11:21:01.330497 (Thread-1): Parsing macros/materializations/table/table.sql
+2021-07-08 11:21:01.337301 (Thread-1): Parsing macros/materializations/incremental/helpers.sql
+2021-07-08 11:21:01.339221 (Thread-1): Parsing macros/materializations/incremental/incremental.sql
+2021-07-08 11:21:01.345272 (Thread-1): Parsing macros/etc/is_incremental.sql
+2021-07-08 11:21:01.346928 (Thread-1): Parsing macros/etc/query.sql
+2021-07-08 11:21:01.348008 (Thread-1): Parsing macros/etc/datetime.sql
+2021-07-08 11:21:01.356891 (Thread-1): Parsing macros/etc/get_custom_alias.sql
+2021-07-08 11:21:01.357900 (Thread-1): Parsing macros/etc/get_custom_database.sql
+2021-07-08 11:21:01.359581 (Thread-1): Parsing macros/etc/get_custom_schema.sql
+2021-07-08 11:21:01.361579 (Thread-1): Parsing macros/schema_tests/not_null.sql
+2021-07-08 11:21:01.363104 (Thread-1): Parsing macros/schema_tests/accepted_values.sql
+2021-07-08 11:21:01.365823 (Thread-1): Parsing macros/schema_tests/relationships.sql
+2021-07-08 11:21:01.367689 (Thread-1): Parsing macros/schema_tests/unique.sql
+2021-07-08 11:21:01.369458 (Thread-1): Parsing macros/adapters/common.sql
+2021-07-08 11:21:01.450760 (Thread-1): Acquiring new snowflake connection "model.my_new_project.my_second_dbt_model".
+2021-07-08 11:21:01.466817 (Thread-1): Acquiring new snowflake connection "model.my_new_project.my_first_dbt_model".
+2021-07-08 11:21:01.608826 (Thread-1): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d4227d00>]}
+2021-07-08 11:21:24.786796 (Thread-2): handling status request
+2021-07-08 11:21:24.787142 (Thread-2): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d4353b80>]}
+2021-07-08 11:21:24.788130 (Thread-2): sending response (<Response 9143 bytes [200 OK]>) to 10.0.8.247
+2021-07-08 11:21:24.800646 (Thread-3): handling status request
+2021-07-08 11:21:24.800955 (Thread-3): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d4344880>]}
+2021-07-08 11:21:24.801787 (Thread-3): sending response (<Response 9143 bytes [200 OK]>) to 10.0.8.247
+2021-07-08 11:21:24.817078 (Thread-4): handling ps request
+2021-07-08 11:21:24.817382 (Thread-4): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17eb820430>]}
+2021-07-08 11:21:24.818172 (Thread-4): sending response (<Response 105 bytes [200 OK]>) to 10.0.13.236
+2021-07-08 11:21:24.861774 (Thread-5): handling status request
+2021-07-08 11:21:24.862144 (Thread-5): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17e4a99df0>]}
+2021-07-08 11:21:24.863007 (Thread-5): sending response (<Response 9143 bytes [200 OK]>) to 10.0.7.44
+2021-07-08 11:21:24.891206 (Thread-6): handling status request
+2021-07-08 11:21:24.891525 (Thread-6): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d5c88730>]}
+2021-07-08 11:21:24.892343 (Thread-6): sending response (<Response 9143 bytes [200 OK]>) to 10.0.2.242
+2021-07-08 11:22:23.641091 (Thread-7): handling status request
+2021-07-08 11:22:23.643307 (Thread-7): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d420bfa0>]}
+2021-07-08 11:22:23.644183 (Thread-7): sending response (<Response 9143 bytes [200 OK]>) to 10.0.17.210
+2021-07-08 11:22:24.051582 (Thread-8): handling run_sql request
+2021-07-08 11:22:24.051876 (Thread-8): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d421edc0>]}
+2021-07-08 11:22:24.054343 (Thread-8): Connection 'model.my_new_project.my_first_dbt_model' was properly closed.
+2021-07-08 11:22:26.045063 (Thread-8): sending response (<Response 138 bytes [200 OK]>) to 10.0.7.44
+2021-07-08 11:22:26.056146 (MainThread): Acquiring new snowflake connection "rpc.my_new_project.request".
+2021-07-08 11:22:26.070481 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9a546b6e-40e0-4d5d-a1ed-e24581399f0e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f262b1aae50>]}
+2021-07-08 11:22:26.070773 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-08 11:22:26.071246 (Thread-1): Acquiring new snowflake connection "rpc.my_new_project.request".
+2021-07-08 11:22:26.071355 (Thread-1): Compiling rpc.my_new_project.request
+2021-07-08 11:22:26.072490 (Thread-1): finished collecting timing info
+2021-07-08 11:22:26.073901 (Thread-1): Using snowflake connection "rpc.my_new_project.request".
+2021-07-08 11:22:26.074002 (Thread-1): On rpc.my_new_project.request: with customers as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from `dbt-tutorial`.jaffle_shop.customers
+
+),
+
+orders as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from `dbt-tutorial`.jaffle_shop.orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+limit 500
+/* limit added automatically by dbt cloud */
+2021-07-08 11:22:26.074075 (Thread-1): Opening a new connection, currently in state init
+2021-07-08 11:22:26.482503 (Thread-9): handling poll request
+2021-07-08 11:22:26.482845 (Thread-9): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d41c9880>]}
+2021-07-08 11:22:26.483835 (Thread-9): sending response (<Response 4320 bytes [200 OK]>) to 10.0.31.252
+2021-07-08 11:22:27.595709 (Thread-1): Snowflake query id: 019d72aa-0000-155e-0000-00015ea65c01
+2021-07-08 11:22:27.595918 (Thread-1): Snowflake error: 002003 (02000): SQL compilation error:
+Database '"`DBT-TUTORIAL`"' does not exist or not authorized.
+2021-07-08 11:22:27.596064 (Thread-1): finished collecting timing info
+2021-07-08 11:22:27.596244 (Thread-1): On rpc.my_new_project.request: Close
+2021-07-08 11:22:27.831265 (Thread-1): Got an exception: Database Error
+  002003 (02000): SQL compilation error:
+  Database '"`DBT-TUTORIAL`"' does not exist or not authorized.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (02000): SQL compilation error:
+Database '"`DBT-TUTORIAL`"' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  002003 (02000): SQL compilation error:
+  Database '"`DBT-TUTORIAL`"' does not exist or not authorized.
+2021-07-08 11:22:27.834277 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': 'Database Error in rpc request (from remote system)\n  002003 (02000): SQL compilation error:\n  Database \'"`DBT-TUTORIAL`"\' does not exist or not authorized.', 'raw_sql': 'with customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from `dbt-tutorial`.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from `dbt-tutorial`.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.first_name,\n        customers.last_name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': 'with customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from `dbt-tutorial`.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from `dbt-tutorial`.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.first_name,\n        customers.last_name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 145, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 360, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': 'Database Error in rpc request (from remote system)\n  002003 (02000): SQL compilation error:\n  Database \'"`DBT-TUTORIAL`"\' does not exist or not authorized.', 'raw_sql': 'with customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from `dbt-tutorial`.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from `dbt-tutorial`.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.first_name,\n        customers.last_name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': 'with customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from `dbt-tutorial`.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from `dbt-tutorial`.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.first_name,\n        customers.last_name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+2021-07-08 11:22:27.899246 (Thread-10): handling poll request
+2021-07-08 11:22:27.899569 (Thread-10): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d41c90a0>]}
+2021-07-08 11:22:27.900255 (Thread-10): sending response (<Response 10411 bytes [200 OK]>) to 10.0.2.242
+2021-07-08 11:22:29.288830 (Thread-11): handling poll request
+2021-07-08 11:22:29.289161 (Thread-11): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d41c9a60>]}
+2021-07-08 11:22:29.289895 (Thread-11): sending response (<Response 16354 bytes [200 OK]>) to 10.0.30.62
+2021-07-08 11:22:35.994141 (Thread-12): handling status request
+2021-07-08 11:22:35.994470 (Thread-12): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d41c9f40>]}
+2021-07-08 11:22:35.995389 (Thread-12): sending response (<Response 9143 bytes [200 OK]>) to 10.0.4.228
+2021-07-08 11:22:36.401025 (Thread-13): handling compile_sql request
+2021-07-08 11:22:36.401389 (Thread-13): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d418d040>]}
+2021-07-08 11:22:38.443251 (Thread-13): sending response (<Response 138 bytes [200 OK]>) to 10.0.31.252
+2021-07-08 11:22:38.454165 (MainThread): Acquiring new snowflake connection "rpc.my_new_project.request".
+2021-07-08 11:22:38.465014 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7c2a9cb8-b1ea-492d-9840-f9180bb2fae8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f51405e7f40>]}
+2021-07-08 11:22:38.465376 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-08 11:22:38.465767 (Thread-1): Acquiring new snowflake connection "rpc.my_new_project.request".
+2021-07-08 11:22:38.465875 (Thread-1): Compiling rpc.my_new_project.request
+2021-07-08 11:22:38.466975 (Thread-1): finished collecting timing info
+2021-07-08 11:22:38.467097 (Thread-1): finished collecting timing info
+2021-07-08 11:22:38.932833 (Thread-14): handling poll request
+2021-07-08 11:22:38.933169 (Thread-14): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d418d7f0>]}
+2021-07-08 11:22:38.934441 (Thread-14): sending response (<Response 8485 bytes [200 OK]>) to 10.0.7.44
+2021-07-08 11:23:30.348724 (Thread-15): handling status request
+2021-07-08 11:23:30.349040 (Thread-15): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d418d9d0>]}
+2021-07-08 11:23:30.349904 (Thread-15): sending response (<Response 9143 bytes [200 OK]>) to 10.0.33.205
+2021-07-08 11:23:30.758082 (Thread-16): handling run_sql request
+2021-07-08 11:23:30.758417 (Thread-16): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d418da00>]}
+2021-07-08 11:23:32.762080 (Thread-16): sending response (<Response 138 bytes [200 OK]>) to 10.0.15.178
+2021-07-08 11:23:32.773378 (MainThread): Acquiring new snowflake connection "rpc.my_new_project.request".
+2021-07-08 11:23:32.788376 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '06f5b386-12de-4f19-8009-87b7466ce0bc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6817ce7f10>]}
+2021-07-08 11:23:32.788696 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-08 11:23:32.789197 (Thread-1): Acquiring new snowflake connection "rpc.my_new_project.request".
+2021-07-08 11:23:32.789308 (Thread-1): Compiling rpc.my_new_project.request
+2021-07-08 11:23:32.790618 (Thread-1): finished collecting timing info
+2021-07-08 11:23:32.791926 (Thread-1): Using snowflake connection "rpc.my_new_project.request".
+2021-07-08 11:23:32.791992 (Thread-1): On rpc.my_new_project.request: with customers as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from raw.jaffle_shop.customers
+
+),
+
+orders as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from raw.jaffle_shop.orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+limit 500
+/* limit added automatically by dbt cloud */
+2021-07-08 11:23:32.792054 (Thread-1): Opening a new connection, currently in state init
+2021-07-08 11:23:33.255472 (Thread-17): handling poll request
+2021-07-08 11:23:33.255815 (Thread-17): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d4192b20>]}
+2021-07-08 11:23:33.256804 (Thread-17): sending response (<Response 4308 bytes [200 OK]>) to 10.0.28.173
+2021-07-08 11:23:34.282867 (Thread-1): Snowflake query id: 019d72ab-0000-1559-0000-00015ea666cd
+2021-07-08 11:23:34.283068 (Thread-1): Snowflake error: 002003 (02000): SQL compilation error:
+Database 'RAW' does not exist or not authorized.
+2021-07-08 11:23:34.283202 (Thread-1): finished collecting timing info
+2021-07-08 11:23:34.283372 (Thread-1): On rpc.my_new_project.request: Close
+2021-07-08 11:23:34.506567 (Thread-1): Got an exception: Database Error
+  002003 (02000): SQL compilation error:
+  Database 'RAW' does not exist or not authorized.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/usr/local/lib/python3.8/dist-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (02000): SQL compilation error:
+Database 'RAW' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error
+  002003 (02000): SQL compilation error:
+  Database 'RAW' does not exist or not authorized.
+2021-07-08 11:23:34.508800 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  002003 (02000): SQL compilation error:\n  Database 'RAW' does not exist or not authorized.", 'raw_sql': 'with customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from raw.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.first_name,\n        customers.last_name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': 'with customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from raw.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.first_name,\n        customers.last_name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 145, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 360, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': "Database Error in rpc request (from remote system)\n  002003 (02000): SQL compilation error:\n  Database 'RAW' does not exist or not authorized.", 'raw_sql': 'with customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from raw.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.first_name,\n        customers.last_name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': 'with customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from raw.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.first_name,\n        customers.last_name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+2021-07-08 11:23:34.686148 (Thread-18): handling poll request
+2021-07-08 11:23:34.686458 (Thread-18): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d4192fa0>]}
+2021-07-08 11:23:34.687127 (Thread-18): sending response (<Response 10235 bytes [200 OK]>) to 10.0.42.58
+2021-07-08 11:23:36.268665 (Thread-19): handling poll request
+2021-07-08 11:23:36.268981 (Thread-19): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'f5cc646a-2aef-45be-bb94-72d606ea1b54', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17d4199070>]}
+2021-07-08 11:23:36.269685 (Thread-19): sending response (<Response 16106 bytes [200 OK]>) to 10.0.37.153
+2021-07-08 11:42:32.544474 (MainThread): Running with dbt=0.19.1
+2021-07-08 11:42:32.691652 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.rpc.server.RPCServerTask'>, debug=False, defer=None, exclude=None, host='0.0.0.0', log_cache_events=False, log_format='default', models=None, partial_parse=True, port=8580, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='rpc', write_json=True)
+2021-07-08 11:42:32.698990 (MainThread): Tracking: tracking
+2021-07-08 11:42:32.713478 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff86236b490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8619e9790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8619e9730>]}
+2021-07-08 11:42:32.713830 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=15
+2021-07-08 11:42:32.714182 (MainThread): Supported methods: ['cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'status', 'test']
+2021-07-08 11:42:32.714436 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2021-07-08 11:42:32.715093 (Thread-1): Parsing macros/adapters.sql
+2021-07-08 11:42:32.734600 (Thread-1): Parsing macros/etc.sql
+2021-07-08 11:42:32.736625 (Thread-1): Parsing macros/catalog.sql
+2021-07-08 11:42:32.742584 (Thread-1): Parsing macros/materializations/copy.sql
+2021-07-08 11:42:32.746787 (Thread-1): Parsing macros/materializations/table.sql
+2021-07-08 11:42:32.756314 (Thread-1): Parsing macros/materializations/incremental.sql
+2021-07-08 11:42:32.768249 (Thread-1): Parsing macros/materializations/seed.sql
+2021-07-08 11:42:32.770848 (Thread-1): Parsing macros/materializations/snapshot.sql
+2021-07-08 11:42:32.772628 (Thread-1): Parsing macros/materializations/view.sql
+2021-07-08 11:42:32.776049 (Thread-1): Parsing macros/core.sql
+2021-07-08 11:42:32.779841 (Thread-1): Parsing macros/materializations/helpers.sql
+2021-07-08 11:42:32.788699 (Thread-1): Parsing macros/materializations/common/merge.sql
+2021-07-08 11:42:32.802204 (Thread-1): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-08 11:42:32.803953 (Thread-1): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-08 11:42:32.820942 (Thread-1): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-08 11:42:32.852007 (Thread-1): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-08 11:42:32.857198 (Thread-1): Parsing macros/materializations/view/view.sql
+2021-07-08 11:42:32.863185 (Thread-1): Parsing macros/materializations/seed/seed.sql
+2021-07-08 11:42:32.883089 (Thread-1): Parsing macros/materializations/table/table.sql
+2021-07-08 11:42:32.889432 (Thread-1): Parsing macros/materializations/incremental/helpers.sql
+2021-07-08 11:42:32.891180 (Thread-1): Parsing macros/materializations/incremental/incremental.sql
+2021-07-08 11:42:32.897596 (Thread-1): Parsing macros/etc/is_incremental.sql
+2021-07-08 11:42:32.899508 (Thread-1): Parsing macros/etc/query.sql
+2021-07-08 11:42:32.900547 (Thread-1): Parsing macros/etc/datetime.sql
+2021-07-08 11:42:32.909033 (Thread-1): Parsing macros/etc/get_custom_alias.sql
+2021-07-08 11:42:32.909963 (Thread-1): Parsing macros/etc/get_custom_database.sql
+2021-07-08 11:42:32.911593 (Thread-1): Parsing macros/etc/get_custom_schema.sql
+2021-07-08 11:42:32.913503 (Thread-1): Parsing macros/schema_tests/not_null.sql
+2021-07-08 11:42:32.914988 (Thread-1): Parsing macros/schema_tests/accepted_values.sql
+2021-07-08 11:42:32.917598 (Thread-1): Parsing macros/schema_tests/relationships.sql
+2021-07-08 11:42:32.919449 (Thread-1): Parsing macros/schema_tests/unique.sql
+2021-07-08 11:42:32.921166 (Thread-1): Parsing macros/adapters/common.sql
+2021-07-08 11:42:33.111983 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2021-07-08 11:42:33.127211 (Thread-1): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-07-08 11:42:33.240095 (Thread-1): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8605a3e50>]}
+2021-07-08 11:42:34.172670 (Thread-2): handling status request
+2021-07-08 11:42:34.172956 (Thread-2): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff86073ac10>]}
+2021-07-08 11:42:34.173752 (Thread-2): sending response (<Response 9936 bytes [200 OK]>) to 10.0.4.228
+2021-07-08 11:42:34.211290 (Thread-3): handling status request
+2021-07-08 11:42:34.211665 (Thread-3): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff86059adc0>]}
+2021-07-08 11:42:34.212805 (Thread-3): sending response (<Response 9936 bytes [200 OK]>) to 10.0.41.110
+2021-07-08 11:42:34.217634 (Thread-4): handling status request
+2021-07-08 11:42:34.217842 (Thread-4): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff86057fc70>]}
+2021-07-08 11:42:34.218636 (Thread-4): sending response (<Response 9936 bytes [200 OK]>) to 10.0.25.104
+2021-07-08 11:42:34.221711 (Thread-5): handling status request
+2021-07-08 11:42:34.221896 (Thread-5): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff86054ce80>]}
+2021-07-08 11:42:34.222513 (Thread-5): sending response (<Response 9936 bytes [200 OK]>) to 10.0.37.153
+2021-07-08 11:42:34.231833 (Thread-6): handling ps request
+2021-07-08 11:42:34.232024 (Thread-6): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff86054c400>]}
+2021-07-08 11:42:34.232426 (Thread-6): sending response (<Response 105 bytes [200 OK]>) to 10.0.34.86
+2021-07-08 11:42:42.688823 (Thread-7): handling status request
+2021-07-08 11:42:42.690789 (Thread-7): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff86054c550>]}
+2021-07-08 11:42:42.691558 (Thread-7): sending response (<Response 9936 bytes [200 OK]>) to 10.0.41.110
+2021-07-08 11:42:43.072881 (Thread-8): handling run_sql request
+2021-07-08 11:42:43.073160 (Thread-8): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff86054c280>]}
+2021-07-08 11:42:43.075528 (Thread-8): Connection 'model.my_new_project.my_first_dbt_model' was properly closed.
+2021-07-08 11:42:44.822937 (Thread-8): sending response (<Response 138 bytes [200 OK]>) to 10.0.28.173
+2021-07-08 11:42:44.834109 (MainThread): Acquiring new bigquery connection "rpc.my_new_project.request".
+2021-07-08 11:42:44.845304 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '64e53d78-e924-4252-9f2e-618a23d91216', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41a4e987c0>]}
+2021-07-08 11:42:44.845543 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-08 11:42:44.871641 (Thread-1): Acquiring new bigquery connection "rpc.my_new_project.request".
+2021-07-08 11:42:44.871744 (Thread-1): Compiling rpc.my_new_project.request
+2021-07-08 11:42:44.873669 (Thread-1): finished collecting timing info
+2021-07-08 11:42:44.873797 (Thread-1): Opening a new connection, currently in state init
+2021-07-08 11:42:44.878255 (Thread-1): On rpc.my_new_project.request: /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+limit 500
+/* limit added automatically by dbt cloud */
+2021-07-08 11:42:45.274215 (Thread-9): handling poll request
+2021-07-08 11:42:45.274536 (Thread-9): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff860537ac0>]}
+2021-07-08 11:42:45.275474 (Thread-9): sending response (<Response 3523 bytes [200 OK]>) to 10.0.15.178
+2021-07-08 11:42:46.682212 (Thread-10): handling poll request
+2021-07-08 11:42:46.682494 (Thread-10): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff860537c70>]}
+2021-07-08 11:42:46.682994 (Thread-10): sending response (<Response 401 bytes [200 OK]>) to 10.0.8.247
+2021-07-08 11:42:48.095967 (Thread-11): handling poll request
+2021-07-08 11:42:48.096280 (Thread-11): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8605378e0>]}
+2021-07-08 11:42:48.096810 (Thread-11): sending response (<Response 401 bytes [200 OK]>) to 10.0.4.228
+2021-07-08 11:42:48.233029 (Thread-1): finished collecting timing info
+2021-07-08 11:42:49.502053 (Thread-12): handling poll request
+2021-07-08 11:42:49.502389 (Thread-12): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8605379d0>]}
+2021-07-08 11:42:49.503273 (Thread-12): sending response (<Response 4547 bytes [200 OK]>) to 10.0.8.247
+2021-07-08 11:42:52.763685 (Thread-13): handling status request
+2021-07-08 11:42:52.763974 (Thread-13): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff860537670>]}
+2021-07-08 11:42:52.764868 (Thread-13): sending response (<Response 9936 bytes [200 OK]>) to 10.0.15.178
+2021-07-08 11:42:53.148144 (Thread-14): handling compile_sql request
+2021-07-08 11:42:53.148433 (Thread-14): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff860697160>]}
+2021-07-08 11:42:54.854931 (Thread-14): sending response (<Response 138 bytes [200 OK]>) to 10.0.28.173
+2021-07-08 11:42:54.865831 (MainThread): Acquiring new bigquery connection "rpc.my_new_project.request".
+2021-07-08 11:42:54.876658 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c1887837-86f0-4a97-a000-142f6bf9bc38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff6677e3d00>]}
+2021-07-08 11:42:54.876867 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-08 11:42:54.877264 (Thread-1): Acquiring new bigquery connection "rpc.my_new_project.request".
+2021-07-08 11:42:54.877361 (Thread-1): Compiling rpc.my_new_project.request
+2021-07-08 11:42:54.879175 (Thread-1): finished collecting timing info
+2021-07-08 11:42:54.879318 (Thread-1): finished collecting timing info
+2021-07-08 11:42:55.263735 (Thread-15): handling poll request
+2021-07-08 11:42:55.264040 (Thread-15): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff86068e2b0>]}
+2021-07-08 11:42:55.265205 (Thread-15): sending response (<Response 6548 bytes [200 OK]>) to 10.0.2.242
+2021-07-08 11:43:39.315479 (Thread-16): handling status request
+2021-07-08 11:43:39.316993 (Thread-16): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff86068edc0>]}
+2021-07-08 11:43:39.317980 (Thread-16): sending response (<Response 9936 bytes [200 OK]>) to 10.0.28.173
+2021-07-08 11:43:39.760222 (Thread-17): handling run_sql request
+2021-07-08 11:43:39.760500 (Thread-17): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff86068e1c0>]}
+2021-07-08 11:43:41.516606 (Thread-17): sending response (<Response 138 bytes [200 OK]>) to 10.0.41.110
+2021-07-08 11:43:41.527619 (MainThread): Acquiring new bigquery connection "rpc.my_new_project.request".
+2021-07-08 11:43:41.541395 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '889684ed-fc1d-4e83-be24-aab502f9bfee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f51d08ca490>]}
+2021-07-08 11:43:41.541631 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-08 11:43:41.542033 (Thread-1): Acquiring new bigquery connection "rpc.my_new_project.request".
+2021-07-08 11:43:41.542133 (Thread-1): Compiling rpc.my_new_project.request
+2021-07-08 11:43:41.543358 (Thread-1): finished collecting timing info
+2021-07-08 11:43:41.543501 (Thread-1): Opening a new connection, currently in state init
+2021-07-08 11:43:41.548289 (Thread-1): On rpc.my_new_project.request: with customers as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from raw.jaffle_shop.customers
+
+),
+
+orders as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from raw.jaffle_shop.orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+limit 500
+/* limit added automatically by dbt cloud */
+2021-07-08 11:43:41.932872 (Thread-18): handling poll request
+2021-07-08 11:43:41.933152 (Thread-18): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff86068ef10>]}
+2021-07-08 11:43:41.934032 (Thread-18): sending response (<Response 4016 bytes [200 OK]>) to 10.0.33.205
+2021-07-08 11:43:42.120437 (Thread-1): Retry attempt 1 of 1 after error: BadRequest('GET https://bigquery.googleapis.com/bigquery/v2/projects/atlan-dbt/queries/b851a4eb-3c15-498e-a773-7dbd7c899842?maxResults=0&location=US&prettyPrint=false: The project raw has not enabled BigQuery.')
+2021-07-08 11:43:42.630032 (Thread-1): finished collecting timing info
+2021-07-08 11:43:42.630206 (Thread-1): Got an exception: Database Error
+  The project raw has not enabled BigQuery.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 149, in exception_handler
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 534, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/lib/python3.8/dist-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 327, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 520, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/google/cloud/bigquery/job/query.py", line 1146, in result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/google/cloud/bigquery/job/base.py", line 631, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/google/api_core/future/polling.py", line 129, in result
+    self._blocking_poll(timeout=timeout, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/google/cloud/bigquery/job/query.py", line 1042, in _blocking_poll
+    super(QueryJob, self)._blocking_poll(timeout=timeout, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/google/api_core/future/polling.py", line 107, in _blocking_poll
+    retry_(self._done_or_raise)(**kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/google/api_core/retry.py", line 281, in retry_wrapped_func
+    return retry_target(
+  File "/usr/local/lib/python3.8/dist-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/lib/python3.8/dist-packages/google/api_core/future/polling.py", line 85, in _done_or_raise
+    if not self.done(**kwargs):
+  File "/usr/local/lib/python3.8/dist-packages/google/cloud/bigquery/job/query.py", line 1022, in done
+    self._query_results = self._client._get_query_results(
+  File "/usr/local/lib/python3.8/dist-packages/google/cloud/bigquery/client.py", line 1557, in _get_query_results
+    resource = self._call_api(
+  File "/usr/local/lib/python3.8/dist-packages/google/cloud/bigquery/client.py", line 636, in _call_api
+    return call()
+  File "/usr/local/lib/python3.8/dist-packages/google/api_core/retry.py", line 281, in retry_wrapped_func
+    return retry_target(
+  File "/usr/local/lib/python3.8/dist-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/lib/python3.8/dist-packages/google/cloud/_http.py", line 438, in api_request
+    raise exceptions.from_http_response(response)
+google.api_core.exceptions.BadRequest: 400 GET https://bigquery.googleapis.com/bigquery/v2/projects/atlan-dbt/queries/59f66745-76e4-41c1-aeeb-79145e25fe82?maxResults=0&location=US&prettyPrint=false: The project raw has not enabled BigQuery.
+
+(job ID: 59f66745-76e4-41c1-aeeb-79145e25fe82)
+
+                       -----Query Job SQL Follows-----                        
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:with customers as (
+   2:
+   3:    select
+   4:        id as customer_id,
+   5:        first_name,
+   6:        last_name
+   7:
+   8:    from raw.jaffle_shop.customers
+   9:
+  10:),
+  11:
+  12:orders as (
+  13:
+  14:    select
+  15:        id as order_id,
+  16:        user_id as customer_id,
+  17:        order_date,
+  18:        status
+  19:
+  20:    from raw.jaffle_shop.orders
+  21:
+  22:),
+  23:
+  24:customer_orders as (
+  25:
+  26:    select
+  27:        customer_id,
+  28:
+  29:        min(order_date) as first_order_date,
+  30:        max(order_date) as most_recent_order_date,
+  31:        count(order_id) as number_of_orders
+  32:
+  33:    from orders
+  34:
+  35:    group by 1
+  36:
+  37:),
+  38:
+  39:
+  40:final as (
+  41:
+  42:    select
+  43:        customers.customer_id,
+  44:        customers.first_name,
+  45:        customers.last_name,
+  46:        customer_orders.first_order_date,
+  47:        customer_orders.most_recent_order_date,
+  48:        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+  49:
+  50:    from customers
+  51:
+  52:    left join customer_orders using (customer_id)
+  53:
+  54:)
+  55:
+  56:select * from final
+  57:limit 500
+  58:/* limit added automatically by dbt cloud */
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/node_runners.py", line 90, in execute
+    _, execute_result = self.adapter.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 338, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 329, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 534, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 153, in exception_handler
+    self.handle_error(e, message)
+  File "/usr/local/lib/python3.8/dist-packages/dbt/adapters/bigquery/connections.py", line 141, in handle_error
+    raise DatabaseException(error_msg)
+dbt.exceptions.DatabaseException: Database Error
+  The project raw has not enabled BigQuery.
+2021-07-08 11:43:42.632573 (Thread-1): Got exception RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': 'Database Error in rpc request (from remote system)\n  The project raw has not enabled BigQuery.', 'raw_sql': 'with customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from raw.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.first_name,\n        customers.last_name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': 'with customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from raw.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.first_name,\n        customers.last_name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/rpc/sql_commands.py", line 145, in _in_thread
+    self.node_results.append(runner.safe_run(self.manifest))
+  File "/usr/local/lib/python3.8/dist-packages/dbt/task/base.py", line 360, in safe_run
+    result = self.error_result(ctx.node, error, started, [])
+  File "/usr/local/lib/python3.8/dist-packages/dbt/rpc/node_runners.py", line 56, in error_result
+    raise error
+dbt.rpc.error.RPCException: RPCException(10003, Database Error, {'type': 'DatabaseException', 'message': 'Database Error in rpc request (from remote system)\n  The project raw has not enabled BigQuery.', 'raw_sql': 'with customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from raw.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.first_name,\n        customers.last_name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'compiled_sql': 'with customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from raw.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.first_name,\n        customers.last_name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\n\nselect * from final\nlimit 500\n/* limit added automatically by dbt cloud */', 'tags': None}, None)
+2021-07-08 11:43:43.360712 (Thread-19): handling poll request
+2021-07-08 11:43:43.361036 (Thread-19): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff860537b80>]}
+2021-07-08 11:43:43.361754 (Thread-19): sending response (<Response 19212 bytes [200 OK]>) to 10.0.15.178
+2021-07-08 11:43:54.644392 (Thread-20): handling status request
+2021-07-08 11:43:54.644681 (Thread-20): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff86057fcd0>]}
+2021-07-08 11:43:54.645517 (Thread-20): sending response (<Response 9936 bytes [200 OK]>) to 10.0.8.247
+2021-07-08 11:43:55.060914 (Thread-21): handling run_sql request
+2021-07-08 11:43:55.061232 (Thread-21): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff86067cbb0>]}
+2021-07-08 11:43:56.765220 (Thread-21): sending response (<Response 138 bytes [200 OK]>) to 10.0.13.236
+2021-07-08 11:43:56.776086 (MainThread): Acquiring new bigquery connection "rpc.my_new_project.request".
+2021-07-08 11:43:56.786088 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5622afa8-4570-49d9-a680-992a77d9e6e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6cd2998880>]}
+2021-07-08 11:43:56.786309 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-08 11:43:56.786658 (Thread-1): Acquiring new bigquery connection "rpc.my_new_project.request".
+2021-07-08 11:43:56.786759 (Thread-1): Compiling rpc.my_new_project.request
+2021-07-08 11:43:56.787830 (Thread-1): finished collecting timing info
+2021-07-08 11:43:56.787948 (Thread-1): Opening a new connection, currently in state init
+2021-07-08 11:43:56.792402 (Thread-1): On rpc.my_new_project.request: with customers as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from `dbt-tutorial`.jaffle_shop.customers
+
+),
+
+orders as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from `dbt-tutorial`.jaffle_shop.orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+limit 500
+/* limit added automatically by dbt cloud */
+2021-07-08 11:43:57.251528 (Thread-22): handling poll request
+2021-07-08 11:43:57.251835 (Thread-22): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8606641f0>]}
+2021-07-08 11:43:57.252714 (Thread-22): sending response (<Response 4038 bytes [200 OK]>) to 10.0.15.202
+2021-07-08 11:43:58.653565 (Thread-23): handling poll request
+2021-07-08 11:43:58.653858 (Thread-23): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff860661670>]}
+2021-07-08 11:43:58.654362 (Thread-23): sending response (<Response 403 bytes [200 OK]>) to 10.0.25.104
+2021-07-08 11:43:59.226981 (Thread-1): finished collecting timing info
+2021-07-08 11:44:00.080034 (Thread-24): handling poll request
+2021-07-08 11:44:00.080311 (Thread-24): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff860661820>]}
+2021-07-08 11:44:00.081691 (Thread-24): sending response (<Response 11635 bytes [200 OK]>) to 10.0.42.58
+2021-07-08 11:44:11.744250 (Thread-25): handling status request
+2021-07-08 11:44:11.744577 (Thread-25): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8606641f0>]}
+2021-07-08 11:44:11.745668 (Thread-25): sending response (<Response 9936 bytes [200 OK]>) to 10.0.34.86
+2021-07-08 11:44:12.154744 (Thread-26): handling compile_sql request
+2021-07-08 11:44:12.155034 (Thread-26): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff86073a5e0>]}
+2021-07-08 11:44:13.876143 (Thread-26): sending response (<Response 138 bytes [200 OK]>) to 10.0.13.236
+2021-07-08 11:44:13.886958 (MainThread): Acquiring new bigquery connection "rpc.my_new_project.request".
+2021-07-08 11:44:13.896996 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7e72d83e-0596-472e-99df-5c5c670059f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f111b164880>]}
+2021-07-08 11:44:13.897212 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-08 11:44:13.897570 (Thread-1): Acquiring new bigquery connection "rpc.my_new_project.request".
+2021-07-08 11:44:13.897672 (Thread-1): Compiling rpc.my_new_project.request
+2021-07-08 11:44:13.898728 (Thread-1): finished collecting timing info
+2021-07-08 11:44:13.898841 (Thread-1): finished collecting timing info
+2021-07-08 11:44:14.360248 (Thread-27): handling poll request
+2021-07-08 11:44:14.360549 (Thread-27): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff860649b50>]}
+2021-07-08 11:44:14.361638 (Thread-27): sending response (<Response 8483 bytes [200 OK]>) to 10.0.15.202
+2021-07-08 11:44:18.039853 (Thread-28): handling status request
+2021-07-08 11:44:18.040139 (Thread-28): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff860649880>]}
+2021-07-08 11:44:18.040944 (Thread-28): sending response (<Response 9936 bytes [200 OK]>) to 10.0.7.44
+2021-07-08 11:44:18.468336 (Thread-29): handling run_sql request
+2021-07-08 11:44:18.468612 (Thread-29): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff860649a00>]}
+2021-07-08 11:44:20.227221 (Thread-29): sending response (<Response 138 bytes [200 OK]>) to 10.0.34.86
+2021-07-08 11:44:20.238096 (MainThread): Acquiring new bigquery connection "rpc.my_new_project.request".
+2021-07-08 11:44:20.248085 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'db9eeb9b-b438-4003-b7be-5f68f35ce15e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe716c8fd90>]}
+2021-07-08 11:44:20.248307 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-08 11:44:20.248661 (Thread-1): Acquiring new bigquery connection "rpc.my_new_project.request".
+2021-07-08 11:44:20.248767 (Thread-1): Compiling rpc.my_new_project.request
+2021-07-08 11:44:20.249830 (Thread-1): finished collecting timing info
+2021-07-08 11:44:20.249962 (Thread-1): Opening a new connection, currently in state init
+2021-07-08 11:44:20.254592 (Thread-1): On rpc.my_new_project.request: with customers as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from `dbt-tutorial`.jaffle_shop.customers
+
+),
+
+orders as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from `dbt-tutorial`.jaffle_shop.orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+limit 500
+/* limit added automatically by dbt cloud */
+2021-07-08 11:44:20.676973 (Thread-30): handling poll request
+2021-07-08 11:44:20.677270 (Thread-30): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff860684a60>]}
+2021-07-08 11:44:20.678151 (Thread-30): sending response (<Response 4038 bytes [200 OK]>) to 10.0.28.173
+2021-07-08 11:44:21.936018 (Thread-1): finished collecting timing info
+2021-07-08 11:44:22.556612 (Thread-31): handling poll request
+2021-07-08 11:44:22.556905 (Thread-31): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8606845e0>]}
+2021-07-08 11:44:22.558182 (Thread-31): sending response (<Response 11633 bytes [200 OK]>) to 10.0.7.44
+2021-07-08 11:45:13.467125 (Thread-32): handling status request
+2021-07-08 11:45:13.468737 (Thread-32): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'b16a4c8a-16ae-487b-bdd4-c5b244138c53', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff860684790>]}
+2021-07-08 11:45:13.469573 (Thread-32): sending response (<Response 9936 bytes [200 OK]>) to 10.0.17.210
