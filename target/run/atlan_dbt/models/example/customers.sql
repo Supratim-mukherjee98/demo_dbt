@@ -1,4 +1,11 @@
-{{ config(materialized='table') }}
+
+
+  create or replace table `atlan-dbt`.`Atlan_dbt`.`customers`
+  
+  
+  OPTIONS()
+  as (
+    
 with customers as (
 
     select
@@ -55,3 +62,5 @@ final as (
 )
 
 select * from final
+  );
+    
