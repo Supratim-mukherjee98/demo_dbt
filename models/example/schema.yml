@@ -3,14 +3,14 @@ version: 2
 
 models:
     - name: my_first_dbt_model
-      description: "A starter dbt model"
+      description: "This is a test comment"
       columns:
           - name: id
             description: "The primary key for this table"
             tests:
                 - unique
                 - not_null
-models:
+                
     - name: customers.sql
       description: "customer table"
       columns:
@@ -19,6 +19,7 @@ models:
             tests:
                 - unique
                 - not_null
+
     - name: my_second_dbt_model
       description: "A starter dbt model"
       columns:
