@@ -1,13 +1,8 @@
 
 
-  create or replace table `atlan-dbt`.`Atlan_dbt`.`customers`
-  
-  
+  create or replace view `atlan-dbt`.`Atlan_dbt`.`customers`
   OPTIONS()
-  as (
-    
-
-with customers as (
+  as with customers as (
    
 
     select
@@ -65,6 +60,5 @@ final as (
 
 )
 
-select * from final
-  );
-    
+select * from final;
+
