@@ -15,7 +15,7 @@ models:
       description: "customer table"
       columns:
           - name: customer_id
-            description: "The primary key for this table"
+            description: "customer info"
             tests:
                 - unique
                 - not_null
