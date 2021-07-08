@@ -7665,3 +7665,250 @@ Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
 2021-07-08 13:49:08.087404 (Thread-192): handling status request
 2021-07-08 13:49:08.087759 (Thread-192): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0659ed9a00>]}
 2021-07-08 13:49:08.088671 (Thread-192): sending response (<Response 11703 bytes [200 OK]>) to 10.0.37.234
+2021-07-08 13:49:13.157102 (Thread-193): Parsing macros/adapters.sql
+2021-07-08 13:49:13.177680 (Thread-193): Parsing macros/etc.sql
+2021-07-08 13:49:13.179715 (Thread-193): Parsing macros/catalog.sql
+2021-07-08 13:49:13.185536 (Thread-193): Parsing macros/materializations/copy.sql
+2021-07-08 13:49:13.190087 (Thread-193): Parsing macros/materializations/table.sql
+2021-07-08 13:49:13.199713 (Thread-193): Parsing macros/materializations/incremental.sql
+2021-07-08 13:49:13.211792 (Thread-193): Parsing macros/materializations/seed.sql
+2021-07-08 13:49:13.214480 (Thread-193): Parsing macros/materializations/snapshot.sql
+2021-07-08 13:49:13.216236 (Thread-193): Parsing macros/materializations/view.sql
+2021-07-08 13:49:13.219707 (Thread-193): Parsing macros/core.sql
+2021-07-08 13:49:13.223488 (Thread-193): Parsing macros/materializations/helpers.sql
+2021-07-08 13:49:13.232443 (Thread-193): Parsing macros/materializations/common/merge.sql
+2021-07-08 13:49:13.246378 (Thread-193): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-08 13:49:13.248125 (Thread-193): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-08 13:49:13.265369 (Thread-193): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-08 13:49:13.296279 (Thread-193): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-08 13:49:13.301198 (Thread-193): Parsing macros/materializations/view/view.sql
+2021-07-08 13:49:13.307333 (Thread-193): Parsing macros/materializations/seed/seed.sql
+2021-07-08 13:49:13.327603 (Thread-193): Parsing macros/materializations/table/table.sql
+2021-07-08 13:49:13.334102 (Thread-193): Parsing macros/materializations/incremental/helpers.sql
+2021-07-08 13:49:13.335912 (Thread-193): Parsing macros/materializations/incremental/incremental.sql
+2021-07-08 13:49:13.341816 (Thread-193): Parsing macros/etc/is_incremental.sql
+2021-07-08 13:49:13.343414 (Thread-193): Parsing macros/etc/query.sql
+2021-07-08 13:49:13.344472 (Thread-193): Parsing macros/etc/datetime.sql
+2021-07-08 13:49:13.353137 (Thread-193): Parsing macros/etc/get_custom_alias.sql
+2021-07-08 13:49:13.354078 (Thread-193): Parsing macros/etc/get_custom_database.sql
+2021-07-08 13:49:13.355721 (Thread-193): Parsing macros/etc/get_custom_schema.sql
+2021-07-08 13:49:13.357676 (Thread-193): Parsing macros/schema_tests/not_null.sql
+2021-07-08 13:49:13.359245 (Thread-193): Parsing macros/schema_tests/accepted_values.sql
+2021-07-08 13:49:13.361914 (Thread-193): Parsing macros/schema_tests/relationships.sql
+2021-07-08 13:49:13.363797 (Thread-193): Parsing macros/schema_tests/unique.sql
+2021-07-08 13:49:13.365519 (Thread-193): Parsing macros/adapters/common.sql
+2021-07-08 13:49:13.438121 (Thread-193): Acquiring new bigquery connection "model.atlan_dbt.my_second_dbt_model".
+2021-07-08 13:49:13.594347 (Thread-193): Acquiring new bigquery connection "model.atlan_dbt.my_first_dbt_model".
+2021-07-08 13:49:13.601641 (Thread-193): Acquiring new bigquery connection "model.atlan_dbt.customers".
+2021-07-08 13:49:13.704548 (Thread-193): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2021-07-08 13:49:13.705068 (Thread-193): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f065b570f10>]}
+2021-07-08 13:49:13.872548 (Thread-194): handling status request
+2021-07-08 13:49:13.872842 (Thread-194): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0659ea5fd0>]}
+2021-07-08 13:49:13.873633 (Thread-194): sending response (<Response 10723 bytes [200 OK]>) to 10.0.0.44
+2021-07-08 13:49:13.885472 (Thread-195): handling status request
+2021-07-08 13:49:13.885697 (Thread-195): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0659ea5af0>]}
+2021-07-08 13:49:13.886509 (Thread-195): sending response (<Response 10723 bytes [200 OK]>) to 10.0.29.252
+2021-07-08 13:49:13.930853 (Thread-196): handling status request
+2021-07-08 13:49:13.931155 (Thread-196): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f065b5702b0>]}
+2021-07-08 13:49:13.931959 (Thread-196): sending response (<Response 10723 bytes [200 OK]>) to 10.0.29.164
+2021-07-08 15:16:26.311001 (Thread-197): handling status request
+2021-07-08 15:16:26.311284 (Thread-197): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0658960550>]}
+2021-07-08 15:16:26.312050 (Thread-197): sending response (<Response 10723 bytes [200 OK]>) to 10.0.7.167
+2021-07-08 15:16:26.323454 (Thread-198): handling ps request
+2021-07-08 15:16:26.323648 (Thread-198): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0658980370>]}
+2021-07-08 15:16:26.324098 (Thread-198): sending response (<Response 507 bytes [200 OK]>) to 10.0.0.44
+2021-07-08 15:16:26.324690 (Thread-199): handling status request
+2021-07-08 15:16:26.325183 (Thread-199): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0658980dc0>]}
+2021-07-08 15:16:26.325863 (Thread-199): sending response (<Response 10723 bytes [200 OK]>) to 10.0.37.234
+2021-07-08 15:16:26.352092 (Thread-200): handling status request
+2021-07-08 15:16:26.352267 (Thread-200): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f065b4f8e20>]}
+2021-07-08 15:16:26.352858 (Thread-200): sending response (<Response 10723 bytes [200 OK]>) to 10.0.12.244
+2021-07-08 15:16:26.402510 (Thread-201): handling status request
+2021-07-08 15:16:26.402762 (Thread-201): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0658ad44f0>]}
+2021-07-08 15:16:26.403420 (Thread-201): sending response (<Response 10723 bytes [200 OK]>) to 10.0.3.69
+2021-07-08 15:16:27.138158 (Thread-202): handling poll request
+2021-07-08 15:16:27.138470 (Thread-202): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f065a01a6d0>]}
+2021-07-08 15:16:27.140302 (Thread-202): sending response (<Response 45887 bytes [200 OK]>) to 10.0.3.69
+2021-07-08 15:16:27.960679 (Thread-203): handling status request
+2021-07-08 15:16:27.960965 (Thread-203): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0659f0a850>]}
+2021-07-08 15:16:27.961770 (Thread-203): sending response (<Response 10723 bytes [200 OK]>) to 10.0.21.146
+2021-07-08 15:16:27.962645 (Thread-204): handling status request
+2021-07-08 15:16:27.963191 (Thread-204): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0659f0a040>]}
+2021-07-08 15:16:27.964000 (Thread-204): sending response (<Response 10723 bytes [200 OK]>) to 10.0.35.22
+2021-07-08 15:16:27.969815 (Thread-205): handling status request
+2021-07-08 15:16:27.969994 (Thread-205): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0659550b80>]}
+2021-07-08 15:16:27.970665 (Thread-205): sending response (<Response 10723 bytes [200 OK]>) to 10.0.42.124
+2021-07-08 15:16:51.931367 (Thread-206): handling status request
+2021-07-08 15:16:51.931660 (Thread-206): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0659550910>]}
+2021-07-08 15:16:51.932416 (Thread-206): sending response (<Response 10723 bytes [200 OK]>) to 10.0.29.164
+2021-07-08 15:16:52.473379 (Thread-207): handling run_sql request
+2021-07-08 15:16:52.473663 (Thread-207): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f06595bbc70>]}
+2021-07-08 15:16:52.474807 (Thread-207): Connection 'model.atlan_dbt.customers' was properly closed.
+2021-07-08 15:16:54.223851 (Thread-207): sending response (<Response 138 bytes [200 OK]>) to 10.0.19.52
+2021-07-08 15:16:54.235002 (MainThread): Acquiring new bigquery connection "rpc.atlan_dbt.request".
+2021-07-08 15:16:54.247905 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '61527c2c-448c-447e-a413-cdc06448d2cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c00c72df0>]}
+2021-07-08 15:16:54.248131 (MainThread): Found 3 models, 6 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-07-08 15:16:54.248512 (Thread-1): Acquiring new bigquery connection "rpc.atlan_dbt.request".
+2021-07-08 15:16:54.248613 (Thread-1): Compiling rpc.atlan_dbt.request
+2021-07-08 15:16:54.250528 (Thread-1): finished collecting timing info
+2021-07-08 15:16:54.250652 (Thread-1): Opening a new connection, currently in state init
+2021-07-08 15:16:54.255112 (Thread-1): On rpc.atlan_dbt.request: 
+with customers as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from `dbt-tutorial`.jaffle_shop.customers
+
+),
+
+orders as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from `dbt-tutorial`.jaffle_shop.orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+limit 500
+/* limit added automatically by dbt cloud */
+2021-07-08 15:16:54.608856 (Thread-208): handling poll request
+2021-07-08 15:16:54.609150 (Thread-208): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f065952b5b0>]}
+2021-07-08 15:16:54.610105 (Thread-208): sending response (<Response 4017 bytes [200 OK]>) to 10.0.29.164
+2021-07-08 15:16:56.014329 (Thread-209): handling poll request
+2021-07-08 15:16:56.014613 (Thread-209): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0659371070>]}
+2021-07-08 15:16:56.015172 (Thread-209): sending response (<Response 391 bytes [200 OK]>) to 10.0.20.89
+2021-07-08 15:16:56.126829 (Thread-1): finished collecting timing info
+2021-07-08 15:16:57.432617 (Thread-210): handling poll request
+2021-07-08 15:16:57.432904 (Thread-210): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '4284fcba-1a87-47c9-b3cf-b2f02c23d754', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0659ea4e80>]}
+2021-07-08 15:16:57.434381 (Thread-210): sending response (<Response 11730 bytes [200 OK]>) to 10.0.0.44
+2021-07-08 19:02:19.977734 (MainThread): Running with dbt=0.19.1
+2021-07-08 19:02:20.370774 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.rpc.server.RPCServerTask'>, debug=False, defer=None, exclude=None, host='0.0.0.0', log_cache_events=False, log_format='default', models=None, partial_parse=True, port=8580, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='rpc', write_json=True)
+2021-07-08 19:02:20.379996 (MainThread): Tracking: tracking
+2021-07-08 19:02:20.396621 (Thread-1): Parsing macros/adapters.sql
+2021-07-08 19:02:20.422639 (Thread-1): Parsing macros/etc.sql
+2021-07-08 19:02:20.424971 (Thread-1): Parsing macros/catalog.sql
+2021-07-08 19:02:20.431128 (Thread-1): Parsing macros/materializations/copy.sql
+2021-07-08 19:02:20.435750 (Thread-1): Parsing macros/materializations/table.sql
+2021-07-08 19:02:20.445569 (Thread-1): Parsing macros/materializations/incremental.sql
+2021-07-08 19:02:20.458403 (Thread-1): Parsing macros/materializations/seed.sql
+2021-07-08 19:02:20.461161 (Thread-1): Parsing macros/materializations/snapshot.sql
+2021-07-08 19:02:20.463097 (Thread-1): Parsing macros/materializations/view.sql
+2021-07-08 19:02:20.466173 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f03567b5580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f037bf6aee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f037bf6a9a0>]}
+2021-07-08 19:02:20.466622 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=16
+2021-07-08 19:02:20.466893 (MainThread): Supported methods: ['cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'status', 'test']
+2021-07-08 19:02:20.467128 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2021-07-08 19:02:20.468352 (Thread-1): Parsing macros/core.sql
+2021-07-08 19:02:20.472298 (Thread-1): Parsing macros/materializations/helpers.sql
+2021-07-08 19:02:20.481045 (Thread-1): Parsing macros/materializations/common/merge.sql
+2021-07-08 19:02:20.495028 (Thread-1): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-07-08 19:02:20.496777 (Thread-1): Parsing macros/materializations/snapshot/strategies.sql
+2021-07-08 19:02:20.513929 (Thread-1): Parsing macros/materializations/snapshot/snapshot.sql
+2021-07-08 19:02:20.545061 (Thread-1): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-07-08 19:02:20.550074 (Thread-1): Parsing macros/materializations/view/view.sql
+2021-07-08 19:02:20.556260 (Thread-1): Parsing macros/materializations/seed/seed.sql
+2021-07-08 19:02:20.577049 (Thread-1): Parsing macros/materializations/table/table.sql
+2021-07-08 19:02:20.583678 (Thread-1): Parsing macros/materializations/incremental/helpers.sql
+2021-07-08 19:02:20.585571 (Thread-1): Parsing macros/materializations/incremental/incremental.sql
+2021-07-08 19:02:20.591547 (Thread-1): Parsing macros/etc/is_incremental.sql
+2021-07-08 19:02:20.593185 (Thread-1): Parsing macros/etc/query.sql
+2021-07-08 19:02:20.594322 (Thread-1): Parsing macros/etc/datetime.sql
+2021-07-08 19:02:20.603385 (Thread-1): Parsing macros/etc/get_custom_alias.sql
+2021-07-08 19:02:20.604378 (Thread-1): Parsing macros/etc/get_custom_database.sql
+2021-07-08 19:02:20.606046 (Thread-1): Parsing macros/etc/get_custom_schema.sql
+2021-07-08 19:02:20.607981 (Thread-1): Parsing macros/schema_tests/not_null.sql
+2021-07-08 19:02:20.609500 (Thread-1): Parsing macros/schema_tests/accepted_values.sql
+2021-07-08 19:02:20.612189 (Thread-1): Parsing macros/schema_tests/relationships.sql
+2021-07-08 19:02:20.614070 (Thread-1): Parsing macros/schema_tests/unique.sql
+2021-07-08 19:02:20.615791 (Thread-1): Parsing macros/adapters/common.sql
+2021-07-08 19:02:20.692830 (Thread-1): Acquiring new bigquery connection "model.atlan_dbt.my_second_dbt_model".
+2021-07-08 19:02:20.710036 (Thread-1): Acquiring new bigquery connection "model.atlan_dbt.my_first_dbt_model".
+2021-07-08 19:02:20.718138 (Thread-1): Acquiring new bigquery connection "model.atlan_dbt.customers".
+2021-07-08 19:02:20.988981 (Thread-1): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2021-07-08 19:02:20.989788 (Thread-1): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a75adbd1-ca65-40d7-9824-582feca00aad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0379af1fd0>]}
+2021-07-08 19:02:52.261697 (Thread-2): handling status request
+2021-07-08 19:02:52.262192 (Thread-2): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'a75adbd1-ca65-40d7-9824-582feca00aad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0379a782b0>]}
+2021-07-08 19:02:52.263138 (Thread-2): sending response (<Response 10460 bytes [200 OK]>) to 10.0.1.229
+2021-07-08 19:02:52.264097 (Thread-3): handling status request
+2021-07-08 19:02:52.264436 (Thread-3): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'a75adbd1-ca65-40d7-9824-582feca00aad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f037bdd6e80>]}
+2021-07-08 19:02:52.265158 (Thread-3): sending response (<Response 10460 bytes [200 OK]>) to 10.0.0.31
+2021-07-08 19:02:52.277938 (Thread-4): handling status request
+2021-07-08 19:02:52.278163 (Thread-4): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'a75adbd1-ca65-40d7-9824-582feca00aad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0379a30730>]}
+2021-07-08 19:02:52.278864 (Thread-4): sending response (<Response 10460 bytes [200 OK]>) to 10.0.19.63
+2021-07-08 19:02:52.279496 (Thread-5): handling status request
+2021-07-08 19:02:52.280059 (Thread-5): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'a75adbd1-ca65-40d7-9824-582feca00aad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f037bdf4520>]}
+2021-07-08 19:02:52.280766 (Thread-5): sending response (<Response 10460 bytes [200 OK]>) to 10.0.13.66
+2021-07-08 19:02:52.291375 (Thread-6): handling ps request
+2021-07-08 19:02:52.291611 (Thread-6): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'a75adbd1-ca65-40d7-9824-582feca00aad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0379b82760>]}
+2021-07-08 19:02:52.292013 (Thread-6): sending response (<Response 105 bytes [200 OK]>) to 10.0.46.157
+2021-07-08 19:02:58.206065 (Thread-7): handling status request
+2021-07-08 19:02:58.206370 (Thread-7): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'a75adbd1-ca65-40d7-9824-582feca00aad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0379b74c70>]}
+2021-07-08 19:02:58.207182 (Thread-7): sending response (<Response 10460 bytes [200 OK]>) to 10.0.18.158
+2021-07-08 19:02:58.539772 (Thread-8): handling ps request
+2021-07-08 19:02:58.540059 (Thread-8): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'a75adbd1-ca65-40d7-9824-582feca00aad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0379a78280>]}
+2021-07-08 19:02:58.540597 (Thread-8): sending response (<Response 105 bytes [200 OK]>) to 10.0.23.127
+2021-07-08 19:06:14.472920 (MainThread): Connection 'model.atlan_dbt.customers' was properly closed.
+2021-07-08 19:06:14.512290 (Thread-9): Got an acceptable cached parse result
+2021-07-08 19:06:14.536821 (Thread-9): Acquiring new bigquery connection "model.atlan_dbt.customers".
+2021-07-08 19:06:14.658902 (Thread-9): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2021-07-08 19:06:14.659675 (Thread-9): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a75adbd1-ca65-40d7-9824-582feca00aad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f037bfbd370>]}
+2021-07-08 19:06:15.304284 (Thread-10): handling status request
+2021-07-08 19:06:15.304611 (Thread-10): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'a75adbd1-ca65-40d7-9824-582feca00aad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f037bfbdc10>]}
+2021-07-08 19:06:15.305224 (Thread-10): sending response (<Response 1606 bytes [200 OK]>) to 10.0.42.50
+2021-07-08 19:06:15.362036 (Thread-11): handling status request
+2021-07-08 19:06:15.362721 (Thread-11): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'a75adbd1-ca65-40d7-9824-582feca00aad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f037bfbda90>]}
+2021-07-08 19:06:15.363272 (Thread-12): handling status request
+2021-07-08 19:06:15.364056 (Thread-11): sending response (<Response 1606 bytes [200 OK]>) to 10.0.46.157
+2021-07-08 19:06:15.364337 (Thread-12): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'a75adbd1-ca65-40d7-9824-582feca00aad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0379b619d0>]}
+2021-07-08 19:06:15.365120 (Thread-12): sending response (<Response 1606 bytes [200 OK]>) to 10.0.3.85
+2021-07-08 19:06:27.625224 (Thread-13): handling status request
+2021-07-08 19:06:27.626816 (Thread-13): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'a75adbd1-ca65-40d7-9824-582feca00aad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f037bfbda90>]}
+2021-07-08 19:06:27.627331 (Thread-13): sending response (<Response 1606 bytes [200 OK]>) to 10.0.13.66
