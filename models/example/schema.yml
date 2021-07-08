@@ -11,7 +11,7 @@ models:
                 - unique
                 - not_null
                 
-    - name: customers.sql
+    - name: customers
       description: "customer table"
       columns:
           - name: customer_id
