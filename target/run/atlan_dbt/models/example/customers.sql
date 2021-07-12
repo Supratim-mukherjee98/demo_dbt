@@ -1,15 +1,16 @@
 
 
-  create or replace view `atlan-dbt`.`Atlan_dbt`.`customers`
+  create or replace table `atlan-dbt`.`Atlan_dbt`.`customers`
+  
+  
   OPTIONS()
-  as with customers as (
+  as (
+    
+with customers as (
    
-    select
-        id as customer_id,
-        first_name,
-        last_name
+     `atlan-dbt`.`Atlan_dbt`.`stg_customers`
 
-    from `dbt-tutorial`.jaffle_shop.customers
+
 ),
 
 orders as (
@@ -56,5 +57,6 @@ final as (
 
 )
 
-select * from final;
-
+select * from final
+  );
+    
