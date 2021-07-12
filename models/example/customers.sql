@@ -1,7 +1,7 @@
 {{ config(materialized='table') }}
 with customers as (
    
-     {{ ref('stg_customers')}}
+    select * from {{ ref('stg_customers')}}
 
 
 ),
