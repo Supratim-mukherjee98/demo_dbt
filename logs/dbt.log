@@ -31501,3 +31501,381 @@ There are 1 unused configuration paths:
 2021-09-21 12:44:23.774982 (Thread-117): handling status request
 2021-09-21 12:44:23.775275 (Thread-117): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc2dcac0>]}
 2021-09-21 12:44:23.775788 (Thread-117): sending response (<Response 1318 bytes [200 OK]>) to 10.0.9.77
+2021-09-21 12:44:27.305344 (Thread-118): Parsing macros/adapters.sql
+2021-09-21 12:44:27.326359 (Thread-118): Parsing macros/etc.sql
+2021-09-21 12:44:27.328367 (Thread-118): Parsing macros/catalog.sql
+2021-09-21 12:44:27.335904 (Thread-118): Parsing macros/materializations/copy.sql
+2021-09-21 12:44:27.342708 (Thread-118): Parsing macros/materializations/table.sql
+2021-09-21 12:44:27.351815 (Thread-118): Parsing macros/materializations/incremental.sql
+2021-09-21 12:44:27.363329 (Thread-118): Parsing macros/materializations/seed.sql
+2021-09-21 12:44:27.365905 (Thread-118): Parsing macros/materializations/snapshot.sql
+2021-09-21 12:44:27.367642 (Thread-118): Parsing macros/materializations/view.sql
+2021-09-21 12:44:27.371025 (Thread-118): Parsing macros/core.sql
+2021-09-21 12:44:27.374648 (Thread-118): Parsing macros/materializations/helpers.sql
+2021-09-21 12:44:27.383129 (Thread-118): Parsing macros/materializations/common/merge.sql
+2021-09-21 12:44:27.396167 (Thread-118): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-21 12:44:27.397848 (Thread-118): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-21 12:44:27.414453 (Thread-118): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-21 12:44:27.444093 (Thread-118): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-21 12:44:27.448954 (Thread-118): Parsing macros/materializations/view/view.sql
+2021-09-21 12:44:27.455460 (Thread-118): Parsing macros/materializations/seed/seed.sql
+2021-09-21 12:44:27.475538 (Thread-118): Parsing macros/materializations/table/table.sql
+2021-09-21 12:44:27.481706 (Thread-118): Parsing macros/materializations/incremental/helpers.sql
+2021-09-21 12:44:27.483444 (Thread-118): Parsing macros/materializations/incremental/incremental.sql
+2021-09-21 12:44:27.489143 (Thread-118): Parsing macros/etc/is_incremental.sql
+2021-09-21 12:44:27.490702 (Thread-118): Parsing macros/etc/query.sql
+2021-09-21 12:44:27.491721 (Thread-118): Parsing macros/etc/datetime.sql
+2021-09-21 12:44:27.500066 (Thread-118): Parsing macros/etc/get_custom_alias.sql
+2021-09-21 12:44:27.501032 (Thread-118): Parsing macros/etc/get_custom_database.sql
+2021-09-21 12:44:27.502636 (Thread-118): Parsing macros/etc/get_custom_schema.sql
+2021-09-21 12:44:27.504605 (Thread-118): Parsing macros/schema_tests/not_null.sql
+2021-09-21 12:44:27.506080 (Thread-118): Parsing macros/schema_tests/accepted_values.sql
+2021-09-21 12:44:27.508705 (Thread-118): Parsing macros/schema_tests/relationships.sql
+2021-09-21 12:44:27.510515 (Thread-118): Parsing macros/schema_tests/unique.sql
+2021-09-21 12:44:27.512211 (Thread-118): Parsing macros/adapters/common.sql
+2021-09-21 12:44:27.576433 (Thread-118): Acquiring new bigquery connection "model.atlan_dbt.stg_customers".
+2021-09-21 12:44:27.580804 (Thread-118): Acquiring new bigquery connection "model.atlan_dbt.my_second_dbt_model".
+2021-09-21 12:44:27.586781 (Thread-118): Acquiring new bigquery connection "model.atlan_dbt.my_first_dbt_model".
+2021-09-21 12:44:27.592624 (Thread-118): Acquiring new bigquery connection "model.atlan_dbt.customers".
+2021-09-21 12:44:27.695522 (Thread-118): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2021-09-21 12:44:27.696637 (Thread-118): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc03abe0>]}
+2021-09-21 12:44:28.185124 (Thread-119): handling status request
+2021-09-21 12:44:28.185496 (Thread-119): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc03a880>]}
+2021-09-21 12:44:28.186665 (Thread-119): sending response (<Response 11023 bytes [200 OK]>) to 10.0.15.178
+2021-09-21 12:44:28.240751 (Thread-120): handling status request
+2021-09-21 12:44:28.241065 (Thread-120): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc082820>]}
+2021-09-21 12:44:28.241864 (Thread-120): sending response (<Response 11023 bytes [200 OK]>) to 10.0.45.117
+2021-09-21 12:44:28.269928 (Thread-121): handling status request
+2021-09-21 12:44:28.270185 (Thread-121): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc082880>]}
+2021-09-21 12:44:28.270936 (Thread-121): sending response (<Response 11023 bytes [200 OK]>) to 10.0.42.69
+2021-09-21 12:44:44.925799 (Thread-122): handling status request
+2021-09-21 12:44:44.926108 (Thread-122): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc6424c0>]}
+2021-09-21 12:44:44.926902 (Thread-122): sending response (<Response 11023 bytes [200 OK]>) to 10.0.15.178
+2021-09-21 12:44:45.352230 (Thread-123): handling status request
+2021-09-21 12:44:45.352514 (Thread-123): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc230220>]}
+2021-09-21 12:44:45.353290 (Thread-123): sending response (<Response 11023 bytes [200 OK]>) to 10.0.38.254
+2021-09-21 12:44:45.387656 (Thread-124): handling docs.generate request
+2021-09-21 12:44:45.387942 (Thread-124): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc230400>]}
+2021-09-21 12:44:45.389116 (Thread-124): Connection 'model.atlan_dbt.customers' was properly closed.
+2021-09-21 12:44:47.013937 (Thread-124): sending response (<Response 138 bytes [200 OK]>) to 10.0.28.173
+2021-09-21 12:44:47.039256 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '537b6330-6f63-4906-8fe5-b14ffe4a2984', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7de229cc10>]}
+2021-09-21 12:44:47.039534 (MainThread): Found 4 models, 6 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 1 source, 0 exposures
+2021-09-21 12:44:47.040695 (MainThread): 
+2021-09-21 12:44:47.040825 (MainThread): Acquiring new bigquery connection "master".
+2021-09-21 12:44:47.041809 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_atlan-dbt_Atlan_dbt".
+2021-09-21 12:44:47.041909 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-21 12:44:47.256746 (MainThread): 12:44:47 | Concurrency: 1 threads (target='default')
+2021-09-21 12:44:47.256875 (MainThread): 12:44:47 | 
+2021-09-21 12:44:47.258812 (Thread-1): Began running node model.atlan_dbt.my_first_dbt_model
+2021-09-21 12:44:47.258990 (Thread-1): Acquiring new bigquery connection "model.atlan_dbt.my_first_dbt_model".
+2021-09-21 12:44:47.259073 (Thread-1): Compiling model.atlan_dbt.my_first_dbt_model
+2021-09-21 12:44:47.263648 (Thread-1): Writing injected SQL for node "model.atlan_dbt.my_first_dbt_model"
+2021-09-21 12:44:47.277969 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.278107 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.278221 (Thread-1): Finished running node model.atlan_dbt.my_first_dbt_model
+2021-09-21 12:44:47.278308 (Thread-1): Began running node model.atlan_dbt.stg_customers
+2021-09-21 12:44:47.278389 (Thread-1): Acquiring new bigquery connection "model.atlan_dbt.stg_customers".
+2021-09-21 12:44:47.278445 (Thread-1): Compiling model.atlan_dbt.stg_customers
+2021-09-21 12:44:47.279441 (Thread-1): Writing injected SQL for node "model.atlan_dbt.stg_customers"
+2021-09-21 12:44:47.292872 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.292997 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.293104 (Thread-1): Finished running node model.atlan_dbt.stg_customers
+2021-09-21 12:44:47.293186 (Thread-1): Began running node model.atlan_dbt.my_second_dbt_model
+2021-09-21 12:44:47.293266 (Thread-1): Acquiring new bigquery connection "model.atlan_dbt.my_second_dbt_model".
+2021-09-21 12:44:47.293320 (Thread-1): Compiling model.atlan_dbt.my_second_dbt_model
+2021-09-21 12:44:47.295348 (Thread-1): Writing injected SQL for node "model.atlan_dbt.my_second_dbt_model"
+2021-09-21 12:44:47.310767 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.310886 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.310983 (Thread-1): Finished running node model.atlan_dbt.my_second_dbt_model
+2021-09-21 12:44:47.311064 (Thread-1): Began running node test.atlan_dbt.not_null_my_first_dbt_model_id
+2021-09-21 12:44:47.311143 (Thread-1): Acquiring new bigquery connection "test.atlan_dbt.not_null_my_first_dbt_model_id".
+2021-09-21 12:44:47.311196 (Thread-1): Compiling test.atlan_dbt.not_null_my_first_dbt_model_id
+2021-09-21 12:44:47.317949 (Thread-1): Writing injected SQL for node "test.atlan_dbt.not_null_my_first_dbt_model_id"
+2021-09-21 12:44:47.333290 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.333414 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.333510 (Thread-1): Finished running node test.atlan_dbt.not_null_my_first_dbt_model_id
+2021-09-21 12:44:47.333593 (Thread-1): Began running node test.atlan_dbt.unique_my_first_dbt_model_id
+2021-09-21 12:44:47.333677 (Thread-1): Acquiring new bigquery connection "test.atlan_dbt.unique_my_first_dbt_model_id".
+2021-09-21 12:44:47.333735 (Thread-1): Compiling test.atlan_dbt.unique_my_first_dbt_model_id
+2021-09-21 12:44:47.339635 (Thread-1): Writing injected SQL for node "test.atlan_dbt.unique_my_first_dbt_model_id"
+2021-09-21 12:44:47.354436 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.354553 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.354647 (Thread-1): Finished running node test.atlan_dbt.unique_my_first_dbt_model_id
+2021-09-21 12:44:47.354729 (Thread-1): Began running node model.atlan_dbt.customers
+2021-09-21 12:44:47.354805 (Thread-1): Acquiring new bigquery connection "model.atlan_dbt.customers".
+2021-09-21 12:44:47.354858 (Thread-1): Compiling model.atlan_dbt.customers
+2021-09-21 12:44:47.356927 (Thread-1): Writing injected SQL for node "model.atlan_dbt.customers"
+2021-09-21 12:44:47.372746 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.372859 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.372956 (Thread-1): Finished running node model.atlan_dbt.customers
+2021-09-21 12:44:47.373035 (Thread-1): Began running node test.atlan_dbt.not_null_my_second_dbt_model_id
+2021-09-21 12:44:47.373111 (Thread-1): Acquiring new bigquery connection "test.atlan_dbt.not_null_my_second_dbt_model_id".
+2021-09-21 12:44:47.373163 (Thread-1): Compiling test.atlan_dbt.not_null_my_second_dbt_model_id
+2021-09-21 12:44:47.377418 (Thread-1): Writing injected SQL for node "test.atlan_dbt.not_null_my_second_dbt_model_id"
+2021-09-21 12:44:47.390761 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.390873 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.390984 (Thread-1): Finished running node test.atlan_dbt.not_null_my_second_dbt_model_id
+2021-09-21 12:44:47.391075 (Thread-1): Began running node test.atlan_dbt.unique_my_second_dbt_model_id
+2021-09-21 12:44:47.391160 (Thread-1): Acquiring new bigquery connection "test.atlan_dbt.unique_my_second_dbt_model_id".
+2021-09-21 12:44:47.391222 (Thread-1): Compiling test.atlan_dbt.unique_my_second_dbt_model_id
+2021-09-21 12:44:47.393941 (Thread-1): Writing injected SQL for node "test.atlan_dbt.unique_my_second_dbt_model_id"
+2021-09-21 12:44:47.409165 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.409279 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.409374 (Thread-1): Finished running node test.atlan_dbt.unique_my_second_dbt_model_id
+2021-09-21 12:44:47.409457 (Thread-1): Began running node test.atlan_dbt.not_null_customers_customer_id
+2021-09-21 12:44:47.409534 (Thread-1): Acquiring new bigquery connection "test.atlan_dbt.not_null_customers_customer_id".
+2021-09-21 12:44:47.409587 (Thread-1): Compiling test.atlan_dbt.not_null_customers_customer_id
+2021-09-21 12:44:47.412194 (Thread-1): Writing injected SQL for node "test.atlan_dbt.not_null_customers_customer_id"
+2021-09-21 12:44:47.427654 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.427770 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.427868 (Thread-1): Finished running node test.atlan_dbt.not_null_customers_customer_id
+2021-09-21 12:44:47.427952 (Thread-1): Began running node test.atlan_dbt.unique_customers_customer_id
+2021-09-21 12:44:47.428061 (Thread-1): Acquiring new bigquery connection "test.atlan_dbt.unique_customers_customer_id".
+2021-09-21 12:44:47.428118 (Thread-1): Compiling test.atlan_dbt.unique_customers_customer_id
+2021-09-21 12:44:47.430781 (Thread-1): Writing injected SQL for node "test.atlan_dbt.unique_customers_customer_id"
+2021-09-21 12:44:47.444171 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.444285 (Thread-1): finished collecting timing info
+2021-09-21 12:44:47.444380 (Thread-1): Finished running node test.atlan_dbt.unique_customers_customer_id
+2021-09-21 12:44:47.445354 (MainThread): Connection 'master' was properly closed.
+2021-09-21 12:44:47.445449 (MainThread): Connection 'test.atlan_dbt.unique_customers_customer_id' was properly closed.
+2021-09-21 12:44:47.501701 (MainThread): 12:44:47 | Done.
+2021-09-21 12:44:47.550145 (MainThread): Acquiring new bigquery connection "generate_catalog".
+2021-09-21 12:44:47.550284 (MainThread): 12:44:47 | Building catalog
+2021-09-21 12:44:47.551255 (MainThread): Opening a new connection, currently in state init
+2021-09-21 12:44:47.567451 (Thread-125): handling poll request
+2021-09-21 12:44:47.567730 (Thread-125): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc0e6730>]}
+2021-09-21 12:44:47.569510 (Thread-125): sending response (<Response 35537 bytes [200 OK]>) to 10.0.30.169
+2021-09-21 12:44:47.727329 (MainThread): Skipping catalog for atlan-dbt.jaffle_shop - schema does not exist
+2021-09-21 12:44:47.727733 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "atlan-dbt.information_schema".
+2021-09-21 12:44:47.740908 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-09-21 12:44:47.745318 (ThreadPoolExecutor-1_0): On atlan-dbt.information_schema: 
+    with tables as (
+        select
+            project_id as table_database,
+            dataset_id as table_schema,
+            table_id as original_table_name,
+
+            concat(project_id, '.', dataset_id, '.', table_id) as relation_id,
+
+            row_count,
+            size_bytes as size_bytes,
+            case
+                when type = 1 then 'table'
+                when type = 2 then 'view'
+                else 'external'
+            end as table_type,
+
+            REGEXP_CONTAINS(table_id, '^.+[0-9]{8}$') and coalesce(type, 0) = 1 as is_date_shard,
+            REGEXP_EXTRACT(table_id, '^(.+)[0-9]{8}$') as shard_base_name,
+            REGEXP_EXTRACT(table_id, '^.+([0-9]{8})$') as shard_name
+
+        from `atlan-dbt`.`Atlan_dbt`.__TABLES__
+        where (upper(dataset_id) = upper('atlan_dbt'))
+    ),
+
+    extracted as (
+
+        select *,
+            case
+                when is_date_shard then shard_base_name
+                else original_table_name
+            end as table_name
+
+        from tables
+
+    ),
+
+    unsharded_tables as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            coalesce(table_type, 'external') as table_type,
+            is_date_shard,
+
+            struct(
+                min(shard_name) as shard_min,
+                max(shard_name) as shard_max,
+                count(*) as shard_count
+            ) as table_shards,
+
+            sum(size_bytes) as size_bytes,
+            sum(row_count) as row_count,
+
+            max(relation_id) as relation_id
+
+        from extracted
+        group by 1,2,3,4,5
+
+    ),
+
+    info_schema_columns as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            table_catalog as table_database,
+            table_schema,
+            table_name,
+
+            -- use the "real" column name from the paths query below
+            column_name as base_column_name,
+            ordinal_position as column_index,
+
+            is_partitioning_column,
+            clustering_ordinal_position
+
+        from `atlan-dbt`.`Atlan_dbt`.INFORMATION_SCHEMA.COLUMNS
+        where ordinal_position is not null
+
+    ),
+
+    info_schema_column_paths as (
+
+        select
+            concat(table_catalog, '.', table_schema, '.', table_name) as relation_id,
+            field_path as column_name,
+            data_type as column_type,
+            column_name as base_column_name,
+            description as column_comment
+
+        from `atlan-dbt`.`Atlan_dbt`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS
+
+    ),
+
+    columns as (
+
+        select * except (base_column_name)
+        from info_schema_columns
+        join info_schema_column_paths using (relation_id, base_column_name)
+
+    ),
+
+    column_stats as (
+
+        select
+            table_database,
+            table_schema,
+            table_name,
+            max(relation_id) as relation_id,
+            max(case when is_partitioning_column = 'YES' then 1 else 0 end) = 1 as is_partitioned,
+            max(case when is_partitioning_column = 'YES' then column_name else null end) as partition_column,
+            max(case when clustering_ordinal_position is not null then 1 else 0 end) = 1 as is_clustered,
+            array_to_string(
+                array_agg(
+                    case
+                        when clustering_ordinal_position is not null then column_name
+                        else null
+                    end ignore nulls
+                    order by clustering_ordinal_position
+                ), ', '
+            ) as clustering_columns
+
+        from columns
+        group by 1,2,3
+
+    )
+
+    select
+        unsharded_tables.table_database,
+        unsharded_tables.table_schema,
+        case
+            when is_date_shard then concat(unsharded_tables.table_name, '*')
+            else unsharded_tables.table_name
+        end as table_name,
+        unsharded_tables.table_type,
+
+        -- coalesce name and type for External tables - these columns are not
+        -- present in the COLUMN_FIELD_PATHS resultset
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields -- BQ does
+        -- not treat these nested properties as independent fields
+        row_number() over (
+            partition by relation_id
+            order by columns.column_index, columns.column_name
+        ) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        columns.column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_shards.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_shards.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_shards.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        (unsharded_tables.table_type = 'table') as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        is_clustered as `stats__clustering_fields__include`
+
+    -- join using relation_id (an actual relation, not a shard prefix) to make
+    -- sure that column metadata is picked up through the join. This will only
+    -- return the column information for the "max" table in a date-sharded table set
+    from unsharded_tables
+    left join columns using (relation_id)
+    left join column_stats using (relation_id)
+  
+2021-09-21 12:44:49.264144 (Thread-126): handling poll request
+2021-09-21 12:44:49.264439 (Thread-126): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc0d46a0>]}
+2021-09-21 12:44:49.265055 (Thread-126): sending response (<Response 8473 bytes [200 OK]>) to 10.0.43.109
+2021-09-21 12:44:50.814920 (MainThread): 12:44:50 | Catalog written to /usr/src/develop/user-27442/environment-33575/repository-27400/target/catalog.json
+2021-09-21 12:44:51.236149 (Thread-127): handling poll request
+2021-09-21 12:44:51.236445 (Thread-127): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc0d6100>]}
+2021-09-21 12:44:51.237201 (Thread-127): sending response (<Response 3637 bytes [200 OK]>) to 10.0.39.194
+2021-09-21 12:44:52.204932 (Thread-128): handling status request
+2021-09-21 12:44:52.205332 (Thread-128): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc0d6ee0>]}
+2021-09-21 12:44:52.206546 (Thread-128): sending response (<Response 11023 bytes [200 OK]>) to 10.0.9.77
+2021-09-21 12:44:52.207668 (Thread-129): handling status request
+2021-09-21 12:44:52.207983 (Thread-129): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc0e6df0>]}
+2021-09-21 12:44:52.208746 (Thread-129): sending response (<Response 11023 bytes [200 OK]>) to 10.0.1.166
+2021-09-21 12:44:52.216767 (Thread-130): handling status request
+2021-09-21 12:44:52.216998 (Thread-130): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc0d6910>]}
+2021-09-21 12:44:52.245712 (Thread-130): sending response (<Response 11023 bytes [200 OK]>) to 10.0.1.166
+2021-09-21 12:44:52.382740 (Thread-131): handling status request
+2021-09-21 12:44:52.383031 (Thread-131): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5da9785b80>]}
+2021-09-21 12:44:52.383846 (Thread-131): sending response (<Response 11023 bytes [200 OK]>) to 10.0.30.255
+2021-09-21 12:45:38.076658 (Thread-132): Got an acceptable cached parse result
+2021-09-21 12:45:38.349550 (Thread-132): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2021-09-21 12:45:38.350192 (Thread-132): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc092580>]}
+2021-09-21 12:45:38.995474 (Thread-134): handling status request
+2021-09-21 12:45:38.995763 (Thread-134): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc075700>]}
+2021-09-21 12:45:38.996320 (Thread-134): sending response (<Response 1318 bytes [200 OK]>) to 10.0.43.109
+2021-09-21 12:45:38.998739 (Thread-133): handling status request
+2021-09-21 12:45:38.998951 (Thread-133): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc22b250>]}
+2021-09-21 12:45:38.999355 (Thread-133): sending response (<Response 1318 bytes [200 OK]>) to 10.0.1.236
+2021-09-21 12:45:39.026207 (Thread-135): handling status request
+2021-09-21 12:45:39.026456 (Thread-135): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc237fd0>]}
+2021-09-21 12:45:39.026936 (Thread-135): sending response (<Response 1318 bytes [200 OK]>) to 10.0.0.15
+2021-09-21 12:45:44.303330 (Thread-136): handling status request
+2021-09-21 12:45:44.303859 (Thread-136): Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd083ff48-b2a2-487d-834e-d522409faccd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5dcc195850>]}
+2021-09-21 12:45:44.304565 (Thread-136): sending response (<Response 1318 bytes [200 OK]>) to 10.0.30.255
