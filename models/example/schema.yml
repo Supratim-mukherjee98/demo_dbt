@@ -6,6 +6,8 @@ models:
       description: "This is a test comment"
       columns:
           - name: id
+            tags: 
+             -  pii
             description: "The primary key for this table"
             tests:
                 - unique

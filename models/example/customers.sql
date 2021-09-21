@@ -8,7 +8,7 @@ with customers as (
 
 orders as (
 
- select
+    select
         id as order_id,
         user_id as customer_id,
         order_date,
