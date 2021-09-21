@@ -7,8 +7,8 @@ models:
       columns:
           - name: id
             tags: 
-             -  pii
-            description: "The primary key"
+             - Supratim
+            description: "The primary ey"
             tests:
                 - unique
                 - not_null
